@@ -15,7 +15,7 @@ def recommend_crop(N, P, K, temperature, humidity, ph, rainfall):
 
 
 # can not directly load the data set as a frame
-array = pd.read_csv("E:/Datasets/Crop_recommendation.csv")
+array = pd.read_csv("./Crop_recommendation.csv")
 df = pd.DataFrame(array)
 print(df.duplicated())
 df = df.drop_duplicates()
